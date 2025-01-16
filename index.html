@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main>
+        <img src="img/paper-bag.png" alt="" id="paper-bag">
+
+        <section>
+            <form action="">
+                <fieldset class="item">
+                    <legend>Item</legend>
+                    <input type="text" name="item" required id="input-item">
+                </fieldset>
+
+                <div class="fieldset2">
+                    <fieldset class="quantity">
+                        <legend>Quantidade</legend>
+                        <input type="number" name="quantity" id="input-quantity" min="1" required>
+                    </fieldset>
+
+                    <fieldset class="category">
+                        <legend>Categoria</legend>
+                        <select name="category" id="input-category">
+                            <option value="" selected disabled hidden>Selecione a categoria</option>
+                            <option value="food">Alimentação</option>
+                            <option value="cleaning">Limpeza</option>
+                            <option value="hygiene">Higiene Pessoal</option>
+                            <option value="others">Utilidades e outros</option>
+                        </select>
+                    </fieldset>
+                </div>
+
+                <button type="submit" id="submit-item">Adicionar item</button>
+            </form>
+
+            <div class="grocery-items">
+                <header>
+                    <p>Minha Lista <i>&bullet;</i>
+                        <span>0 itens</span></p>
+                </header>
+
+                <ul class="grocery-list">
+                    <!-- <li class="grocery">
+                        <img src="img/food.png" alt="Alimentação">
+
+                        <div class="grocery-info">
+                            <p><strong>Arroz</strong></p>
+                            <span><small>Alimentação</small></span>
+                        </div>
+                        
+                        <span class="grocery-quantity"><strong>30</strong> <small>uni.</small></span>
+
+                        <img src="img/remove.png" alt="remove" class="remove-icon">
+                    </li> -->
+                </ul>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
