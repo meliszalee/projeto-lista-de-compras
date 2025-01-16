@@ -25,13 +25,14 @@ body{
     background-color: #bcc2b0;
     display: flex;
     justify-content: center;
+    height: 100vh;
+    align-items: center;
     font-family: 'Roboto Flex';
 }
 
 main{
     background-color: #ffffffe2;
     width: 350px;
-    margin-top: 5rem;
     border-radius: 20px;
     padding: 1.5rem 2.5rem 2rem 2.5rem;
 }
