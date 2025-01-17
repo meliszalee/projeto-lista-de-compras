@@ -1,0 +1,65 @@
+#paper-bag{
+    max-width: 100px;
+    display: block;
+    margin: auto;
+    padding: .5rem 0 1rem 0;
+}
+
+fieldset{
+    border: none;
+}
+
+fieldset legend{
+    font-weight: 500;
+    font-size: .95rem;
+    color: var(--font-color1);
+    padding: 5px;
+}
+
+#input-item{
+    width: 98%;
+}
+
+#input-item, #input-quantity, #input-category{
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding-left: 5px;
+    font-family: 'Roboto Flex';
+}
+
+input:focus, select:focus{
+    outline: none;
+    border-color: var(--input-selected) !important;
+}
+
+fieldset:has(input:focus, select:focus) legend{
+    color: var(--input-selected);
+}
+
+.fieldset2{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+    align-items: center;
+}
+
+#input-category{
+    width: 190px;
+}
+
+#submit-item{
+    padding: 15px;
+    width: 100%;
+    background-color: var(--color1);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+#submit-item:hover{
+    background-color: #e94850;
+}

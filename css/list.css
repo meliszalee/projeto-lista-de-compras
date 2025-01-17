@@ -1,0 +1,69 @@
+.grocery-items header p{
+    text-align: center;
+    margin-top: 2rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+    color: var(--font-color1);
+}
+
+.grocery-items header p i{
+    margin: 0px 20px;
+}
+
+.grocery-list{
+    height: 200px;
+    overflow-y: scroll;
+    margin-top: 2rem;
+}
+
+.grocery-list::-webkit-scrollbar{
+    width: 10px;
+    background-color: transparent;
+}
+
+.grocery-list::-webkit-scrollbar-thumb{
+    width: 10px;
+    background-color: #4c4c4c14;
+}
+
+.grocery-list img{
+    width: 30px;
+}
+
+.grocery{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.grocery + .grocery{
+    margin-top: 1.5rem;
+}
+
+.grocery-info{
+    width: 190px;
+    overflow-wrap: break-word;
+}
+
+.grocery-info strong{
+    font-size: .95rem;
+    color: var(--font-color1);
+}
+
+.grocery-info small{
+    color: var(--font-color2);
+}
+
+.grocery-quantity strong{
+    color: var(--color1);
+    font-size: .9rem;
+}
+
+.grocery-quantity{
+    width: 60px;
+}
+
+.remove-icon{
+    width: 10px !important;
+    cursor: pointer;
+}

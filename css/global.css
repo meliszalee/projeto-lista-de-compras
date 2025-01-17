@@ -1,0 +1,122 @@
+@charset "UTF-8";
+@import url(form.css);
+@import url(list.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+@font-face {
+    font-family: 'Roboto Flex';
+    src: url();
+}
+
+*{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+:root{
+    --color1: #FC6067;
+    --bg: #ffffffe2;
+    --font-color1: #222222de;
+    --font-color2: #222222c0;
+    --border-color: #6d6d6d7b;
+    --input-selected: green;
+}
+
+body{
+    background-color: #bcc2b0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    font-family: 'Roboto Flex';
+}
+
+main{
+    background-color: var(--bg);
+    width: 350px;
+    border-radius: 20px;
+    padding: 1.5rem 2.5rem 2rem 2.5rem;
+}
+
+@media screen and (max-width: 799px) {
+    main{
+        width: 250px;
+        margin-top: 1rem;
+    }
+
+    #paper-bag{
+        width: 50px;
+    }
+
+    #input-item, #input-quantity, #input-category{
+        height: 30px !important;
+    }
+
+    #input-category{
+        width: 130px !important;
+    }
+
+    #input-quantity{
+        width: 100px;
+    }
+
+    #submit-item{
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1600px) {
+    main{
+        background-color: transparent;
+        margin: auto;
+        transform: translate(-50%, 0);
+    }
+
+    section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "img    lista"
+        "form   lista";
+        gap: 40px;
+        padding: 20px;
+        height: 370px;
+        align-content: center;
+    }
+
+    section, .grocery-items{
+        background-color: var(--bg);
+        border-radius: 20px;
+    }
+
+    #paper-bag{
+        grid-area: img;
+    }
+
+    form{
+        grid-area: form;
+    }
+
+    #input-item{
+        width: 98% !important;
+    }
+
+    #input-category{
+        width: 150px !important;
+        margin-left: 10px;
+    }
+
+    .grocery-items{
+        grid-area: lista;
+        grid-column: 2/-1;
+        padding: 20px;
+        height: 400px;
+        width: 350px;
+    }
+
+    .grocery-list{
+        height: 280px !important;
+    }
+}
